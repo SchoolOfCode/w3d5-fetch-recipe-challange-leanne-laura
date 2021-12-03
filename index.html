@@ -3,15 +3,70 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Fetch</title>
+    <title>The Recipe Club</title>
+    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <section id="recipe-section">
-      <h2 class="section-heading">Welcome to the Recipe Finder!</h2>
-      <input aria-label="food-input" id="food-input" />
-      <button id="recipe-button">Give me a recipe!</button>
-      <a id="recipe-label"></a>
-    </section>
+    <div class="body-grid">
+      <header class="header">
+        <h1>The Recipe Club</h1>
+        <section class="search-bar">
+          <input type= "text" class="search-input" id="search-input">
+          <img class="search-icon" src="magnifying-glass-solid.svg" style="width:20px; height:20px">
+          <button id="search-button">Search</button>
+        </section>
+      </header>
+      <nav class="navbar">
+        <div class="nav-link" id="nav-logo"></div>
+        <div class="nav-link" id="nav-home">Home</div>
+        <div class="nav-link" id="nav-vegetarian">Vegetarian</div>
+        <div class="nav-link" id="nav-healthy">Healthy</div>
+        <div class="nav-link" id="nav-budget">Budget</div>
+        <div class="nav-link" id="nav-summer">Summer Salads</div>
+        <div class="nav-link" id="nav-winter">Winter Stews</div>
+      </nav>
+      <main class="main-grid">
+        <section class="featured">
+          <h2 class="featured-text"></h2>
+          <img class="featured-img" src="featured-img.jpg">
+        </section>
+        <section class="our-picks">
+          <div class="recipe-card" id="recipe-card1">
+            <img class="recipe-img" id="recipe-img1" src="">
+            <a class="recipe-text" id="recipe-text1" href="">Recipe1</a>
+          </div>
+          <div class="recipe-card" id="recipe-card2">
+            <img class="recipe-img" id="recipe-img2" src="">
+            <a class="recipe-text" id="recipe-text2">Recipe2</a>
+          </div>
+          <div class="recipe-card" id="recipe-card3">
+            <img class="recipe-img" id="recipe-img3" src="">
+            <a class="recipe-text" id="recipe-text3">Recipe3</a>
+          </div>
+          <div class="recipe-card" id="recipe-card4">
+            <img class="recipe-img" id="recipe-img4" src="">
+            <a class="recipe-text" id="recipe-text4">Recipe4</a>
+          </div>
+        </section>
+        <section class="popular-recipes navbar">
+          <div class="nav-link"></div>
+          <div class="nav-link">Popular1</div>
+          <div class="nav-link">Popular2</div>
+          <div class="nav-link">Popular3</div>
+          <div class="nav-link">Popular4</div>
+          <div class="nav-link">Popular5</div>
+          <div class="nav-link">Popular6</div>
+        </section>
+      </main>
+      <footer class="footer">This is the footer.</footer>
+    </div>
     <script src="./main.js"></script>
   </body>
 </html>
+
+<!-- <img id="recipe-section">
+<h2 class="section-heading">Welcome to the Recipe Finder!</h2>
+<input aria-label="food-input" id="food-input" />
+<button id="recipe-button">Give me a recipe!</button>
+<a id="recipe-label"></a>
+<img> -->

@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Corinthia:wght@400;700&family=Quicksand&display=swap');
+/*font-family: 'Corinthia', cursive;
+font-family: 'Quicksand', sans-serif;*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing: box-border;
+}
+body{
+    font-family: 'Quicksand', sans-serif;
+}
+
+.body-grid{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 100px auto 50px;
+    grid-template-areas:
+    "header header"
+    "navbar main"
+    "footer footer";
+    
+}
+.header{
+    grid-area:header;
+    background-color: #9fffcb;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 5px #004e64 solid;
+}
+
+.navbar{
+    grid-area:navbar;
+    background-color:#25a18e;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer{
+    grid-area:footer;
+    background-color: #9fffcb;
+}
+
+ .main-grid{
+    grid-area: main;
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 500px auto;
+    /*width: 100%;
+    height: 100%;*/
+    
+    grid-template-areas: 
+    "featured popular"
+    "picks popular";
+} 
+
+.featured{
+    grid-area:featured;
+    
+}
+.our-picks{
+    grid-area:picks;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "pick1 pick2"
+    "pick3 pick4";
+    
+    justify-items: center;
+}
+
+.recipe-card{
+    grid-area:pick;
+    display:flex;
+    flex-direction: column;
+    height: 300px;
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+}
+#recipe-card1{
+    grid-area:pick1;
+}
+#recipe-card2{
+    grid-area:pick2;
+}
+#recipe-card3{
+    grid-area:pick3;
+}
+#recipe-card4{
+    grid-area:pick4;
+}
+
+.recipe-img{
+
+}
+.recipe-text{
+
+}
+
+.popular-recipes{
+    grid-area:popular;
+    
+}
+
+.search-bar{
+    
+    margin: 0px 30px;
+    /*height: 25px;*/
+    display:flex;
+    align-items:center;
+}
+
+h1{
+   
+    margin: auto 10px;
+    font-family: 'Corinthia', cursive;
+    font-size: 75px;
+}
+.search-input{
+    height: 20%
+}
+
+.nav-link{
+    margin: 15px 0px;
+}
+.featured-img{
+    height: 100%;
+    width: 100%;
+}
